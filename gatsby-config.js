@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Concours Médecine Maroc`,
-    description: `Préparation du concours de médecine, de pharmacie et de médecine dentaire au Maroc.`,
+    description: `Préparation du concours de médecine, de pharmacie et de médecine dentaire au Maroc. Plateforme numérique en ligne pour préparer le concours de médecine, de pharmacie et de médecine dentaire au Maroc. Annales corrigées de Maths, Physique, Chimie, SVT. Quiz interactifs. Exercices corrigés. Conseils. Coaching. Communauté.`,
     author: `concours-medecine.ma`,
     siteUrl: `https://concours-medecine.ma/`,
   },

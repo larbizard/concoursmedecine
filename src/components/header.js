@@ -1,15 +1,22 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = ({ siteTitle }) => (
-  <header id="accueil" className="flex flex-row align-middle items-center my-2 py-2 px-4 md:px-0">
-
-      <h1 className="md:px-52">
+  <header id="accueil" className="flex flex-row items-center px-4 md:px-0">
+      <h1 className="md:px-52 px-4 text-3xl flex items-center ">
+        <StaticImage
+            src="../images/icon.png"
+            width={90}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="Étudiante en médecine"
+        />
         <Link to="/">
-          {siteTitle}
+          {siteTitle} 
         </Link>
       </h1>
 
