@@ -5,7 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "flowbite": "^1.4.4",
     "gatsby": "^2.19.38",
+    "gatsby-background-image": "^1.6.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^1.0.2",
     "gatsby-plugin-image": "^0.7.2",
     "gatsby-plugin-manifest": "^2.6.1",

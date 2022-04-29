@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://concours-medecine.ma/`,
   },
   plugins: [
+    `gatsby-plugin-anchor-links`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
