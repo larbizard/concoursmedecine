@@ -64,24 +64,23 @@ const IndexPage = ({data}) => (
 
       </div>
       <div id="offre" className="md:px-44 my-5 text-center bg-slate-100 py-20">
-        <ul>
-        <h2>Et nous sommes là pour vous aider. Comment ?</h2>
-          <li>
-              En vous mettant à disposition les annales corrigés des 10 dernières années dans les 4 matières (Maths, Physique, Chimie, SVT)
-          </li>
-          <li>
-              Une plateforme performante et efficace pour gérer vos révisions et piloter en temps réel vos progressions.
-          </li>
-          <li>
-              Des dizaines de quiz pour vous entraîner sur votre ordinateur, tablette ou smartphone.
-          </li>
-          <li>
-              Des conseils pour vous coacher dans votre mindset et vos révisions pour être au top de votre forme le jour J.
-          </li>
-          <li>
-              Une communauté d’élèves avec le bon mindest pour rester motivés et vous entraider. (Groupe privé sur Telegram). 
-          </li>
-        </ul>
+        <h2>Et nous sommes là pour vous aider.</h2>
+        <h2>Comment ?</h2>
+        <p>
+            En vous mettant à disposition les annales corrigés des 10 dernières années dans les 4 matières (Maths, Physique, Chimie, SVT)
+        </p>
+        <p>
+            Une plateforme performante et efficace pour gérer vos révisions et piloter en temps réel vos progressions.
+        </p>
+        <p>
+            Des dizaines de quiz pour vous entraîner sur votre ordinateur, tablette ou smartphone.
+        </p>
+        <p>
+            Des conseils pour vous coacher dans votre mindset et vos révisions pour être au top de votre forme le jour J.
+        </p>
+        <p>
+            Une communauté d’élèves avec le bon mindest pour rester motivés et vous entraider. (Groupe privé sur Telegram). 
+        </p>
       </div>
       <div id="tarif" className="md:px-44 my-5">
           <div className="md:py-5 md:flex md:flex-row align-middle justify-center justify-content-center">
@@ -97,7 +96,8 @@ const IndexPage = ({data}) => (
             <div class="md:mx-4 my-4 md:my-0 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Comment puis- je m’abonner?</h5>
-              <h6 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">C’est très simple. Contactez nous par WhatsApp</h6>
+              <h6 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">C’est très simple.</h6>
+              <h6 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Contactez nous par WhatsApp.</h6>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 <p>Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire </p>
@@ -122,278 +122,14 @@ const IndexPage = ({data}) => (
           <div className="md:flex md:flex-row">
             <div className="md:w-1/2 px-2">
             <h5>Tableau détaillé des places disponibles par faculté au Maroc / Médecine et Pharmacie - Nombre de places par faculté en 2021 - 2022</h5>
-              <table className="hidden md:table table-fixed  text-sm">
-                <thead>
-                  <tr className="bg-slate-200">
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Facult&eacute;&quot;}">
-                  <div className="font-bold px-2" >Faculté</div>
-                  </td>
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;M&eacute;decine&quot;}">Médecine</td>
-                  <td></td>
-                  <td></td>
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Pharmacie&quot;}">
-                  <div className="font-bold">Pharmacie</div>
-                  </td>
-
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total M&eacute;decine et Pharmacie&quot;}">
-                  <div className="px-2">Total Médecine et Pharmacie</div>
-                  </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-slate-100">
-                  <td></td>
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Les civils&quot;}">Les civils</td>
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot; Militaires marocains et &eacute;trangers&quot;}">Militaires marocains et &eacute;trangers</td>
-                  <td className="font-bold" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total&quot;}">Total</td>
-                  <td></td>
-                  <td></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Rabat</div></td>
-                    <td><div className="px-2">560</div></td>
-                    <td><div className="px-2">110</div></td>
-                    <td><div className="px-2">670</div></td>
-                    <td><div className="px-2">120</div></td>
-                    <td><div className="px-2">790</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Casablanca</div></td>
-                    <td><div className="px-2">510</div></td>
-                    <td><div className="px-2">10</div></td>
-                    <td><div className="px-2">520</div></td>
-                    <td><div className="px-2">60</div></td>
-                    <td><div className="px-2">580</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Marrakech</div></td>
-                    <td><div className="px-2">420</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">420</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">420</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Fes</div></td>
-                    <td><div className="px-2">340</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">340</div></td>
-                    <td><div className="px-2">50</div></td>
-                    <td><div className="px-2">390</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Oujda</div></td>
-                    <td><div className="px-2">350</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">350</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">350</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Agadir</div></td>
-                    <td><div className="px-2">210</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">210</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">210</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Tanger</div></td>
-                    <td><div className="px-2">220</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">220</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">220</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Laayoune</div></td>
-                    <td><div className="px-2">100</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">100</div></td>
-                    <td><div className="px-2">-</div></td>
-                    <td><div className="px-2">100</div></td>
-                  </tr>
-                  <tr>
-                    <td><div className="px-2">Total</div></td>
-                    <td><div className="px-2">2710</div></td>
-                    <td><div className="px-2">120</div></td>
-                    <td><div className="px-2">2830</div></td>
-                    <td><div className="px-2">230</div></td>
-                    <td><div className="px-2">3060</div></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table className="table md:hidden"><colgroup><col width="100" /><col width="100" /><col width="219" /><col width="38" /></colgroup>
-                <thead className="bg-slate-200">
-                  <tr>
-                    <td>Faculté</td>
-                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;M&eacute;decine&quot;}">Médecine</td>
-                  </tr>
-                  <tr>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Les civils&quot;}">Les civils</td>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot; Militaires marocains et &eacute;trangers&quot;}">Militaires marocains et &eacute;trangers</td>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total&quot;}">Total</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Rabat&quot;}">Rabat</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:560}">560</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:110}">110</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:670}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">670</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Casablanca&quot;}">Casablanca</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:510}">510</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:10}">10</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:520}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">520</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Marrakech&quot;}">Marrakech</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:420}">420</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:420}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">420</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fes&quot;}">Fes</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:340}">340</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:340}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">340</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Oujda&quot;}">Oujda</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:350}">350</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:350}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">350</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Agadir&quot;}">Agadir</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:210}">210</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:210}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">210</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tanger&quot;}">Tanger</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:220}">220</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:220}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">220</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Laayoune&quot;}">Laayoune</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:100}">100</td>
-                  <td><div className="px-2">-</div></td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:100}" data-sheets-formula="=R[0]C[-2]+R[0]C[-1]">100</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total&quot;}">Total</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2710}" data-sheets-formula="=SUM(R[-8]C[0]:R[-1]C[0])">2710</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:120}" data-sheets-formula="=SUM(R[-8]C[0]:R[-1]C[0])">120</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2830}" data-sheets-formula="=SUM(R[-8]C[0]:R[-1]C[0])">2830</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table className="table md:hidden" dir="ltr" border="1"><colgroup><col width="100" /><col width="189" /></colgroup>
-                <thead className="bg-slate-200">
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Facult&eacute;&quot;}">
-                  <div>Facult&eacute;</div>
-                  </td>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Pharmacie&quot;}">
-                  <div>Pharmacie</div>
-                  </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Rabat&quot;}">Rabat</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:120}">120</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Casablanca&quot;}">Casablanca</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:60}">60</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Marrakech&quot;}">Marrakech</td>
-                  <td><div className="px-2">-</div></td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fes&quot;}">Fes</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:50}">50</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Oujda&quot;}">Oujda</td>
-                  <td><div className="px-2">-</div></td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Agadir&quot;}">Agadir</td>
-                  <td><div className="px-2">-</div></td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tanger&quot;}">Tanger</td>
-                  <td><div className="px-2">-</div></td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Laayoune&quot;}">Laayoune</td>
-                  <td><div className="px-2">-</div></td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total&quot;}">Total</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:230}" data-sheets-formula="=SUM(R[-8]C[0]:R[-1]C[0])">230</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table className="table md:hidden"><colgroup><col width="100" /><col width="189" /></colgroup>
-                <thead className="bg-slate-200">
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Facult&eacute;&quot;}">
-                  <div>Facult&eacute;</div>
-                  </td>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total M&eacute;decine et Pharmacie&quot;}">
-                  <div>Total M&eacute;decine et Pharmacie</div>
-                  </td>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Rabat&quot;}">Rabat</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:790}">790</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Casablanca&quot;}">Casablanca</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:580}">580</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Marrakech&quot;}">Marrakech</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:420}">420</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fes&quot;}">Fes</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:390}">390</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Oujda&quot;}">Oujda</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:350}">350</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Agadir&quot;}">Agadir</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:210}">210</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tanger&quot;}">Tanger</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:220}">220</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Laayoune&quot;}">Laayoune</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:100}">100</td>
-                  </tr>
-                  <tr>
-                  <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Total&quot;}">Total</td>
-                  <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:3060}">3060</td>
-                  </tr>
-                </tbody>
-              </table>
+            
+            <StaticImage
+              src="../images/places_admission_concours_medecine_2021 - 2022.jpeg"
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="Étudiante en médecine"
+              className="place-content-center p-4"
+            />
             </div>
             <div className="md:w-1/2">
               <h5>Communiqué du Ministère de l’Education Nationale concernant l’Inscription Concours FMP FMD 2021/2022:</h5>
