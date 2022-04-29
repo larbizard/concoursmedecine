@@ -13,25 +13,25 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
 
-      <h2 className="px-4 text-sm text-blue-700 hover:text-blue-600">
+      <h2 className="hidden md:block px-4 text-sm text-blue-700 hover:text-blue-600">
         <AnchorLink to="/#accueil" title="Accueil">
           Accueil
         </AnchorLink>
       </h2>
 
-      <h2 className="px-4 text-sm text-blue-700 hover:text-blue-600">
+      <h2 className="hidden md:block px-4 text-sm text-blue-700 hover:text-blue-600">
         <AnchorLink to="/#offre" title="Offre">
           Offre
         </AnchorLink>
       </h2>
 
-      <h2 className="px-4 text-sm text-blue-700 hover:text-blue-600">
+      <h2 className="hidden md:block px-4 text-sm text-blue-700 hover:text-blue-600">
         <AnchorLink to="/#tarif" title="Tarif">
           Tarif
         </AnchorLink>
       </h2>
 
-      <h2 className="px-4 text-sm text-blue-700 hover:text-blue-600">
+      <h2 className="hidden md:block px-4 text-sm text-blue-700 hover:text-blue-600">
         <AnchorLink to="/#faq" title="FAQ">
           FAQ
         </AnchorLink>

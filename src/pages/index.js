@@ -5,9 +5,11 @@ import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import 'flowbite';
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -393,31 +395,15 @@ const IndexPage = ({data}) => (
                 </tbody>
               </table>
             </div>
-            <div id="default-carousel" className="overflow-y-hidden relative md:w-1/2 px-2" data-carousel="static">
+            <div className="md:w-1/2">
               <h5>Communiqué du Ministère de l’Education Nationale concernant l’Inscription Concours FMP FMD 2021/2022:</h5>
-              {/* <!-- Carousel wrapper --> */}
-              <div className=" relative h-full ">
+              <Carousel>
                   {data.slideShow.edges.map(({node}) =>(
-                    <div className="hidden ease-in-out" data-carousel-item key={node.id}>
+                    <div key={node.id}>
                       <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
                     </div>
                   ))}
-              </div>
-              {/* <!-- Slider indicators --> */}
-
-              {/* <!-- Slider controls --> */}
-              <button type="button" className="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                  <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:text-gray-800 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg className="w-5 h-5 text-gray-800 sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                      <span className="hidden">Previous</span>
-                  </span>
-              </button>
-              <button type="button" className="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                  <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:text-gray-800 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg className="w-5 h-5 text-gray-800 sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                      <span className="hidden">Next</span>
-                  </span>
-              </button>
+              </Carousel>
           </div>
         </div>
         <p className="pt-10">
@@ -425,6 +411,7 @@ const IndexPage = ({data}) => (
           Département de l'Enseignement Supérieur et de la Recherche Scientifique.
         </p>
       </div>
+     
       <div className="fixed bottom-10 right-10">
         <AnchorLink  to="/#accueil" title="Accueil">
           <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
