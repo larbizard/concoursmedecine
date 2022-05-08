@@ -30,7 +30,7 @@ const IndexPage = ({data}) => (
         Tag="section"
         fluid={data.headerBackgroundImage.childImageSharp.fluid}
         style={{
-          backgroundAttachment: "fixed",
+          // backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"
@@ -49,7 +49,7 @@ const IndexPage = ({data}) => (
               <li>Soit seulement 6 bacheliers sur 100.</li>
             </ul>
           </div>
-          <div className="w-2/5">
+          <div className="md:w-2/5">
             <AnchorLink to="/#tarif" title="Tarif" className=" my-4 flex items-center">
               <button className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold">Nous contacter</button>
             </AnchorLink>          
@@ -164,7 +164,7 @@ const IndexPage = ({data}) => (
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Comment puis- je m’abonner?</h5>
           <h6 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">C’est très simple.</h6> 
           <div className="md:py-5 md:flex md:flex-row align-middle justify-center justify-content-center">
-            <div class="md:w-1/4 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div class="md:w-1/4 h-72 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <a href="#">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
               </a>
@@ -175,7 +175,7 @@ const IndexPage = ({data}) => (
               Contactez nous
               </a>
             </div>
-            <div class="md:w-1/4 md:ml-2  my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div class="md:w-1/4 h-72 md:ml-2  my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">2 - Dépôt Wafacash ou virement bancaire</h5>
               <p>Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire</p>
               <div className="text-center">
@@ -188,13 +188,13 @@ const IndexPage = ({data}) => (
                 />
               </div>
             </div>
-            <div class="md:w-1/4 md:ml-2 md:mr-2 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div class="md:w-1/4 h-72 md:ml-2 md:mr-2 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 3 - Preuve de paiement
               </h5>
               <p>Envoi de preuve de paiement par WhatSapp</p>
             </div>
-            <div class="md:w-1/4 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div class="md:w-1/4 h-72 my-4 md:my-0 p-2 md:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 4 - Email d'accès
               </h5>
@@ -326,13 +326,22 @@ const IndexPage = ({data}) => (
           </Accordion>
       </div>
      
-      <div className="fixed bottom-10 right-10">
+      <div className="hidden md:block fixed bottom-10 right-10">
         <AnchorLink  to="/#accueil" title="Accueil">
           <button type="button" className="text-white bg-red-600 hover:bg-red-800 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="white" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/></svg>
           </button>
         </AnchorLink>
       </div>
+
+      <div className="fixed md:hidden bottom-10 right-10">
+        <AnchorLink  to="/#accueil-mobile" title="Accueil">
+          <button type="button" className="text-white bg-red-600 hover:bg-red-800 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="white" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/></svg>
+          </button>
+        </AnchorLink>
+      </div>
+      
     </div>
   </Layout>
 )

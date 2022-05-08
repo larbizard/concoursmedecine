@@ -6,7 +6,9 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = ({ siteTitle }) => (
-  <header id="accueil" className="flex flex-row items-center px-4 md:px-0">
+  <>
+
+    <header id="accueil" className="hidden md:flex flex-row items-center px-4 md:px-0 pt-5">
       <h1 className="md:px-52 px-4 text-3xl flex items-center text-red-500 ">
         <StaticImage
             src="../images/icon.png"
@@ -44,6 +46,8 @@ const Header = ({ siteTitle }) => (
         </AnchorLink>
       </h2>
   </header>
+  </>
+
 )
 
 Header.propTypes = {
