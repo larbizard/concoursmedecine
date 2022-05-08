@@ -50,26 +50,26 @@ const Layout = ({ children }) => {
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64"><line x1="9.37" x2="54.63" y1="9.37" y2="54.63" fill="#DC2626" stroke="#DC2626" stroke-miterlimit="10" stroke-width="8"/><line x1="9.37" x2="54.63" y1="54.63" y2="9.37" fill="none" stroke="#DC2626" stroke-miterlimit="10" stroke-width="8"/></svg> }
           </button>
       </header>
-      <div className={ nav ? `block text-center` : `hidden` }>
-        <h2 className="md:block px-4 text-xl text-red-500 hover:text-red-600">
+      <div className={ nav ? `block md:hidden text-center` : `hidden` }>
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
           <AnchorLink to="/#accueil" title="Accueil">
             Accueil
           </AnchorLink>
         </h2>
 
-        <h2 className="md:block px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
           <AnchorLink to="/#offre" title="Offre">
             Offre
           </AnchorLink>
         </h2>
 
-        <h2 className="md:block px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
           <AnchorLink to="/#tarif" title="Tarif">
             Tarif
           </AnchorLink>
         </h2>
 
-        <h2 className="md:block px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
           <AnchorLink to="/#faq" title="FAQ">
             FAQ
           </AnchorLink>
