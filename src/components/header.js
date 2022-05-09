@@ -1,14 +1,14 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = ({ siteTitle }) => (
   <>
 
-    <header id="accueil" className="hidden md:flex flex-row items-center px-4 md:px-0 pt-5">
+    <header id="accueil" className="hidden xl:flex flex-row items-center px-4 md:px-0 pt-5">
       <h1 className="md:px-52 px-4 text-3xl flex items-center text-red-500 ">
         <StaticImage
             src="../images/icon.png"
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
             formats={["auto", "webp", "avif"]}
             alt="Étudiante en médecine"
         />
-        <Link to="/">
+        <Link to="/" className="px-4">
           {siteTitle} 
         </Link>
       </h1>
