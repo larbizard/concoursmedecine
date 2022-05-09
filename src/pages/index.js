@@ -26,6 +26,10 @@ const IndexPage = ({data}) => (
   <Layout>
     <Seo title="Concours Médecine Maroc" />
     <div>
+      <div className="py-8 xl:hidden text-center">
+            <h1 className="text-3xl text-red-500 xl:w-1/2">Vous voulez réussir le concours de médecine au Maroc?</h1>
+            <h1 className="text-3xl text-red-500 xl:w-1/2">Tout commence ici…</h1>
+      </div>
       <BackgroundImage
         Tag="section"
         fluid={data.headerBackgroundImage.childImageSharp.fluid}
@@ -36,8 +40,9 @@ const IndexPage = ({data}) => (
           backgroundSize: "cover"
         }}
       >
-          <div className="py-28 xl:py-56 px-10 xl:px-52 bg-opacity-30 xl:bg-opacity-5 bg-black">
-            <h1 className="text-3xl text-white xl:w-1/2">Ici, nous mettons toutes les chances de votre côté pour réussir le concours de médecine au Maroc.</h1>
+          <div className="py-52 xl:py-56 px-10 xl:px-52 bg-opacity-30 xl:bg-opacity-5 bg-black">
+            <h1 className="hidden text-3xl text-white xl:w-1/2">Vous voulez réussir le concours de médecine au Maroc?</h1>
+            <h1 className="hidden text-3xl text-white xl:w-1/2">Tout commence ici…</h1>
           </div>
       </BackgroundImage>
       <div className="flex flex-col xl:flex-row justify-center py-10 xl:py-20 xl:px-44">
@@ -160,7 +165,7 @@ const IndexPage = ({data}) => (
         <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500">Combien ça coûte?</h5>
         <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
       </div>
-      <div id="tarif" className="xl:px-44 py-20 text-center">
+      <div id="abonnement" className="xl:px-44 py-20 text-center">
           <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 ">Comment puis- je m’abonner?</h5>
           <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">C’est très simple.</h6> 
           <div className="xl:py-5 xl:flex xl:flex-row align-middle justify-center justify-content-center">

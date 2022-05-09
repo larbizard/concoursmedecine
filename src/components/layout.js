@@ -78,6 +78,18 @@ const Layout = ({ children }) => {
             FAQ
           </AnchorLink>
         </h2>
+
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+          <AnchorLink to="/#abonnement" title="Abonnement">
+            Abonnement
+          </AnchorLink>
+        </h2>
+
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+          <AnchorLink to="/#infospratiques" title="Infos pratiques">
+            Infos pratiques
+          </AnchorLink>
+        </h2>
       </div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
