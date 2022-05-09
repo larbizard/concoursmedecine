@@ -99,7 +99,7 @@ const IndexPage = ({data}) => (
         />
       </div>
       <div id="offre" className="xl:px-44 py-20 text-center">
-        <h2>Comment ?</h2>
+        <h2 className="text-3xl text-red-500">Comment ?</h2>
         <div className="xl:py-5 xl:flex xl:flex-row justify-center" >
             <div className="xl:w-1/4 my-4 xl:my-0 p-6 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700 mx-3 text-center">
               <StaticImage
@@ -157,12 +157,12 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="tarif" className="xl:px-44 py-20 bg-slate-100 text-center">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Combien ça coûte?</h5>
-        <h6 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
+        <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500">Combien ça coûte?</h5>
+        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
       </div>
       <div id="tarif" className="xl:px-44 py-20 text-center">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Comment puis- je m’abonner?</h5>
-          <h6 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">C’est très simple.</h6> 
+          <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 ">Comment puis- je m’abonner?</h5>
+          <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">C’est très simple.</h6> 
           <div className="xl:py-5 xl:flex xl:flex-row align-middle justify-center justify-content-center">
             <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
