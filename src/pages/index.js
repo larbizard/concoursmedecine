@@ -27,8 +27,8 @@ const IndexPage = ({data}) => (
     <Seo title="Concours Médecine Maroc" />
     <div>
       <div className="py-8 xl:hidden text-center">
-            <h1 className="text-3xl text-red-500 xl:w-1/2">Vous voulez réussir le concours de médecine au Maroc?</h1>
-            <h1 className="text-3xl text-red-500 xl:w-1/2">Tout commence ici…</h1>
+            <h1 className="text-3xl text-red-500 xl:w-1/2 font-montserrat">Vous voulez réussir le concours de médecine au Maroc?</h1>
+            <h1 className="text-3xl text-red-500 xl:w-1/2 font-montserrat">Tout commence ici…</h1>
       </div>
       <BackgroundImage
         Tag="section"
@@ -47,8 +47,8 @@ const IndexPage = ({data}) => (
       </BackgroundImage>
       <div className="flex flex-col xl:flex-row justify-center py-10 xl:py-20 xl:px-44">
           <div className="bg-white rounded-lg xl:w-3/5">
-            <h1 className="text-2xl ">Le saviez-vous?</h1>
-            <ul className="list-disc text-lg ">
+            <h1 className="text-2xl font-montserrat">Le saviez-vous ?</h1>
+            <ul className="list-disc text-lg font-baloobhai ">
               <li>56 000 bacheliers passent le concours de médecine chaque année au Maroc.</li>
               <li>Seulement 3360 élèves accéderont aux 8 facultés de médecine du royaume.</li>
               <li>Soit seulement 6 bacheliers sur 100.</li>
@@ -56,14 +56,14 @@ const IndexPage = ({data}) => (
           </div>
           <div className="xl:w-2/5">
           <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className=" my-4 flex items-center">
-              <button className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold">Nous contacter</button>
+              <button className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold font-baloobhai">Nous contacter</button>
           </a>          
           </div>
       </div>
       
       <div className="xl:px-44 bg-slate-100">
         <div className="xl:flex xl:flex-row xl:items-center">
-          <h3 className="xl:w-1/2 p-2">Un concours, c’est une compétition sportive de haut niveau, ça se prépare sérieusement et minutieusement…</h3>
+          <h3 className="xl:w-1/2 p-2 font-baloobhai">Un concours, c’est une compétition sportive de haut niveau, ça se prépare sérieusement et minutieusement…</h3>
           <StaticImage
             src="../images/shutterstock_athletes.jpg"
             quality={95}
@@ -81,11 +81,11 @@ const IndexPage = ({data}) => (
             alt="Étudiante en médecine"
             className="xl:w-1/2 place-content-center p-4"
           />
-          <h3 className="xl:w-1/2 p-2">Seuls les athlètes les mieux préparés feront partie des 6% des admis.</h3>
+          <h3 className="xl:w-1/2 p-2 font-baloobhai">Seuls les athlètes les mieux préparés feront partie des 6% des admis.</h3>
         </div>
       </div>
       <div className="xl:px-44 text-center">
-        <h3 className="pt-20">Pas de panique… Nous sommes là pour vous aider.</h3>
+        <h3 className="pt-20 font-baloobhai">Pas de panique… Nous sommes là pour vous aider.</h3>
         <StaticImage
           src="../images/logo_transparent_background.png"
           quality={95}
@@ -104,7 +104,7 @@ const IndexPage = ({data}) => (
         />
       </div>
       <div id="offre" className="xl:px-44 py-20 text-center">
-        <h2 className="text-3xl text-red-500">Comment ?</h2>
+        <h2 className="text-3xl text-red-500 font-montserrat">Comment ?</h2>
         <div className="xl:py-5 xl:flex xl:flex-row justify-center" >
             <div className="xl:w-1/4 my-4 xl:my-0 p-6 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700 mx-3 text-center">
               <StaticImage
@@ -114,7 +114,7 @@ const IndexPage = ({data}) => (
                 alt="Examen"
                 width={100}
               />
-              <p className="pt-10">En vous mettant à disposition les annales corrigés des 10 dernières années dans les 4 matières (Maths, Physique, Chimie, SVT)</p>
+              <p className="pt-10 font-baloobhai">En vous mettant à disposition les annales corrigés des 10 dernières années dans les 4 matières (Maths, Physique, Chimie, SVT)</p>
             </div>
             <div className="xl:w-1/4 my-4 xl:my-0 p-6 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700 mx-3 text-center">
               <StaticImage
@@ -124,7 +124,7 @@ const IndexPage = ({data}) => (
                 alt="Examen"
                 width={100}
               />
-              <p className="pt-10">Une plateforme performante et efficace pour gérer vos révisions et piloter en temps réel vos progressions.</p>
+              <p className="pt-10 font-baloobhai">Une plateforme performante et efficace pour gérer vos révisions et piloter en temps réel vos progressions.</p>
             </div>
             <div className="xl:w-1/4 my-4 xl:my-0 p-6 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700 mx-3 text-center">
               <StaticImage
@@ -134,7 +134,7 @@ const IndexPage = ({data}) => (
                 alt="Examen"
                 width={100}
               />
-              <p className="pt-10">Des dizaines de quiz pour vous entraîner sur votre ordinateur, tablette ou smartphone.</p>
+              <p className="pt-10 font-baloobhai">Des dizaines de quiz pour vous entraîner sur votre ordinateur, tablette ou smartphone.</p>
             </div>
         </div>      
         <div className="xl:py-5 xl:flex xl:flex-row justify-center" >
@@ -146,7 +146,7 @@ const IndexPage = ({data}) => (
                 alt="Examen"
                 width={100}
               />
-              <p className="pt-10">Des conseils pour vous coacher dans votre mindset et vos révisions pour être au top de votre forme le jour J.</p>
+              <p className="pt-10 font-baloobhai">Des conseils pour vous coacher dans votre mindset et vos révisions pour être au top de votre forme le jour J.</p>
             </div>
             <div className="xl:w-1/4 my-4 xl:my-0 p-6 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700 mx-3 text-center">
               <StaticImage
@@ -156,29 +156,29 @@ const IndexPage = ({data}) => (
                 alt="Examen"
                 width={100}
               />
-              <p className="pt-10">Une communauté d’élèves avec le bon mindest pour rester motivés et vous entraider. (Groupe privé sur Telegram).</p>
+              <p className="pt-10 font-baloobhai">Une communauté d’élèves avec le bon mindest pour rester motivés et vous entraider. (Groupe privé sur Telegram).</p>
             </div>
         </div>
       </div>
 
       <div id="tarif" className="xl:px-44 py-20 bg-slate-100 text-center">
-        <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500">Combien ça coûte?</h5>
-        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
+        <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Combien ça coûte?</h5>
+        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
       </div>
       <div id="abonnement" className="xl:px-44 py-20 text-center">
-          <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 ">Comment puis- je m’abonner?</h5>
-          <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">C’est très simple.</h6> 
+          <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Comment puis- je m’abonner?</h5>
+          <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai">C’est très simple.</h6> 
           <div className="xl:py-5 xl:flex xl:flex-row align-middle justify-center justify-content-center">
             <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
-              <p>Envoyez vos nom, prénom et adresse email</p>
-              <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold align-middle ">
+              <p className="font-baloobhai">Envoyez vos nom, prénom et adresse email</p>
+              <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold align-middle font-baloobhai">
               Contactez nous
               </a>
             </div>
             <div className="xl:w-1/4 h-72 xl:ml-2  my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">2 - Dépôt Wafacash ou virement bancaire</h5>
-              <p>Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire</p>
+              <p className="font-baloobhai">Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire</p>
               <div className="text-center">
                 <StaticImage
                   src="../images/wafacash-logo.png"
@@ -193,24 +193,24 @@ const IndexPage = ({data}) => (
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 3 - Preuve de paiement
               </h5>
-              <p>Envoi de preuve de paiement par WhatSapp</p>
+              <p className="font-baloobhai">Envoi de preuve de paiement par WhatSapp</p>
             </div>
             <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 4 - Email d'accès
               </h5>
-              <p>Réception du lien par email pour choisir votre mot de passe et accéder à votre espace de travail personnel.</p>
+              <p className="font-baloobhai">Réception du lien par email pour choisir votre mot de passe et accéder à votre espace de travail personnel.</p>
             </div>
           </div>
  
-          <p><strong>Remarque importante: </strong>L’espace de travail ne peut pas être partagé car il vous permet de faire le suivi de vos propres révisions. </p>
+          <p className="font-baloobhai"><strong>Remarque importante: </strong>L’espace de travail ne peut pas être partagé car il vous permet de faire le suivi de vos propres révisions. </p>
 
       </div>
 
       <div id="infospratiques" className="xl:px-44 py-20 bg-slate-100">
-        <h3 className="mx-2 xl:mx-0">Informations pratiques</h3>
+        <h3 className="mx-2 xl:mx-0 font-montserrat">Informations pratiques</h3>
         
-        <Accordion>
+        <Accordion className="font-baloobhai">
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
@@ -302,8 +302,8 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="faq" className="xl:px-44 py-20">
-        <h3 className="mx-2 xl:mx-0">FAQ</h3>
-        <Accordion>
+        <h3 className="mx-2 xl:mx-0 font-montserrat">FAQ</h3>
+        <Accordion className="font-baloobhai">
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
@@ -311,13 +311,13 @@ const IndexPage = ({data}) => (
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                    Réponse 2
+                    Réponse 1
                   </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Question 1 ?
+                        Question 2 ?
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>

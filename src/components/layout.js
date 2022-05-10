@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
               formats={["auto", "webp", "avif"]}
               alt="Logo"
           />
-          <h1 className="text-xl text-red-500">
+          <h1 className="text-xl text-red-500 font-montserrat">
             {data.site.siteMetadata?.title || `Title`} 
           </h1>
           <button type="button" className="text-red-500 h-5" onClick={() => showNav(!nav)}>
@@ -55,37 +55,37 @@ const Layout = ({ children }) => {
           </button>
       </header>
       <div className={ nav ? `block xl:hidden text-center` : `hidden` }>
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#accueil" title="Accueil">
             Accueil
           </AnchorLink>
         </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#offre" title="Offre">
             Offre
           </AnchorLink>
         </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#tarif" title="Tarif">
             Tarif
           </AnchorLink>
         </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#faq" title="FAQ">
             FAQ
           </AnchorLink>
         </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#abonnement" title="Abonnement">
             Abonnement
           </AnchorLink>
         </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600">
+        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
           <AnchorLink to="/#infospratiques" title="Infos pratiques">
             Infos pratiques
           </AnchorLink>
