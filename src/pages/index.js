@@ -41,8 +41,8 @@ const IndexPage = ({data}) => (
         }}
       >
           <div className="py-52 xl:py-56 px-10 xl:px-52 bg-opacity-30 xl:bg-opacity-5 bg-black">
-            <h1 className="hidden text-3xl text-white xl:w-1/2">Vous voulez réussir le concours de médecine au Maroc?</h1>
-            <h1 className="hidden text-3xl text-white xl:w-1/2">Tout commence ici…</h1>
+            <h1 className="hidden xl:block text-4xl text-white xl:w-1/2">Vous voulez réussir le concours de médecine au Maroc?</h1>
+            <h1 className="hidden xl:block text-4xl text-white xl:w-1/2">Tout commence ici…</h1>
           </div>
       </BackgroundImage>
       <div className="flex flex-col xl:flex-row justify-center py-10 xl:py-20 xl:px-44">

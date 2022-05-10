@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { Transition } from '@headlessui/react'
+
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
@@ -54,42 +56,42 @@ const Layout = ({ children }) => {
             }
           </button>
       </header>
-      <div className={ nav ? `block xl:hidden text-center` : `hidden` }>
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#accueil" title="Accueil">
-            Accueil
+      <div className="xl:hidden">
+        <Transition
+          show={nav}
+          enter="transition-opacity duration-200"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-150"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+          className="border-2 p-4 m-4 rounded-xl drop-shadow-lg bg-red-500"
+        >
+          <AnchorLink to="/#accueil" title="Accueil" className="text-white hover:text-red-600 flex flex-row justify-start">
+            {/* <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="28px" height="28px">    <path d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"/></svg> */}
+            <h2 className="pl-2 text-xl font-montserrat">Accueil</h2>
           </AnchorLink>
-        </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#offre" title="Offre">
-            Offre
+          <AnchorLink to="/#offre" title="Offre" className="text-white hover:text-red-600 flex flex-row justify-start">
+            <h2 className="pl-2 text-xl font-montserrat">Offre</h2>
           </AnchorLink>
-        </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#tarif" title="Tarif">
-            Tarif
+          <AnchorLink to="/#tarif" title="Tarif" className="text-white hover:text-red-600 flex flex-row justify-start">
+            <h2 className="pl-2 text-xl font-montserrat">Tarif</h2>
           </AnchorLink>
-        </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#faq" title="FAQ">
-            FAQ
+          <AnchorLink to="/#faq" title="FAQ" className="text-white hover:text-red-600 flex flex-row justify-start">
+            <h2 className="pl-2 text-xl font-montserrat">FAQ</h2>
           </AnchorLink>
-        </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#abonnement" title="Abonnement">
-            Abonnement
+          <AnchorLink to="/#abonnement" title="Abonnement" className="text-white hover:text-red-600 flex flex-row justify-start">
+            <h2 className="pl-2 text-xl font-montserrat">Abonnement</h2>
           </AnchorLink>
-        </h2>
 
-        <h2 className="px-4 text-xl text-red-500 hover:text-red-600 font-montserrat">
-          <AnchorLink to="/#infospratiques" title="Infos pratiques">
-            Infos pratiques
-          </AnchorLink>
-        </h2>
+        <AnchorLink to="/#infospratiques" title="Infos pratiques" className="text-white hover:text-red-600 flex flex-row justify-start">
+          <h2 className="pl-2 text-xl font-montserrat">Infos pratiques</h2>
+        </AnchorLink>
+      </Transition>
       </div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
