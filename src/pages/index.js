@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import BackgroundImage from 'gatsby-background-image'
 
@@ -10,6 +10,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
+import nightwind from "nightwind/helper"
 
 import {
   Accordion,
@@ -61,33 +63,52 @@ const IndexPage = ({data}) => (
           </div>
       </div>
       
-      <div className="xl:px-44 bg-slate-100">
-        <div className="xl:flex xl:flex-row xl:items-center">
-          <h3 className="xl:w-1/2 p-2 font-baloobhai">Un concours, c’est une compétition sportive de haut niveau, ça se prépare sérieusement et minutieusement…</h3>
+      <div className="block xl:hidden text-center">
+          <h3 className="p-2 font-baloobhai">Un concours, c’est une compétition sportive de haut niveau, ça se prépare sérieusement et minutieusement…</h3>
+
           <StaticImage
-            src="../images/shutterstock_athletes.jpg"
+            height="300"
+            src="../images/icons/business-report.svg"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Étudiante en médecine"
-            className="xl:w-1/2 place-content-center p-4"
           />
+
+          <h3 className="p-2 font-baloobhai">Seuls les athlètes les mieux préparés feront partie des 6% des admis.</h3>
+          <StaticImage
+            height="300"
+            src="../images/icons/medal.svg"
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="Étudiante en médecine"
+          />
+      </div>
+      <div className="hidden xl:flex xl:px-44">
+        <div className="xl:flex xl:flex-row xl:items-center">
+          <StaticImage
+            height="300"
+            src="../images/icons/business-report.svg"
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="Étudiante en médecine"
+          />
+          <h3 className="xl:w-1/2 p-2 font-baloobhai">Un concours, c’est une compétition sportive de haut niveau, ça se prépare sérieusement et minutieusement…</h3>
         </div>
 
-        <div className="xl:flex xl:flex-row xl:items-center">
+        <div className="xl:flex xl:flex-row xl:items-center justify-end">
+          <h3 className="xl:w-1/2 p-2 font-baloobhai">Seuls les athlètes les mieux préparés feront partie des 6% des admis.</h3>
           <StaticImage
-            src="../images/shutterstock_medaille.jpg"
+            height="300"
+            src="../images/icons/medal.svg"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Étudiante en médecine"
-            className="xl:w-1/2 place-content-center p-4"
           />
-          <h3 className="xl:w-1/2 p-2 font-baloobhai">Seuls les athlètes les mieux préparés feront partie des 6% des admis.</h3>
         </div>
       </div>
       <div className="xl:px-44 text-center">
-        <h3 className="pt-20 font-baloobhai">Pas de panique… Nous sommes là pour vous aider.</h3>
         <StaticImage
-          src="../images/logo_transparent_background.png"
+          src="../images/logo_transparent_background_no_baseline.png"
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt="Concours médecine Tout commence ici..."
@@ -163,20 +184,40 @@ const IndexPage = ({data}) => (
 
       <div id="tarif" className="xl:px-44 py-20 bg-slate-100 text-center">
         <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Combien ça coûte?</h5>
-        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
+        <StaticImage
+          src="../images/icons/price-tag.svg"
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="Examen"
+          width={400}
+        />
+        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai pt-10">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
       </div>
       <div id="abonnement" className="xl:px-44 py-20 text-center">
           <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Comment puis- je m’abonner?</h5>
           <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai">C’est très simple.</h6> 
           <div className="xl:py-5 xl:flex xl:flex-row align-middle justify-center justify-content-center">
-            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
               <p className="font-baloobhai">Envoyez vos nom, prénom et adresse email</p>
+              <p className="font-baloobhai">
               <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold align-middle font-baloobhai">
               Contactez nous
               </a>
+              </p>
+              <p className="font-baloobhai">
+              <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer">
+                <StaticImage
+                  src="../images/icons/whatsapp.svg"
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Examen"
+                  width={100}
+                />
+              </a>
+              </p>
             </div>
-            <div className="xl:w-1/4 h-72 xl:ml-2  my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div className="xl:w-1/4 h-72 xl:ml-2  my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">2 - Dépôt Wafacash ou virement bancaire</h5>
               <p className="font-baloobhai">Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire</p>
               <div className="text-center">
@@ -189,17 +230,37 @@ const IndexPage = ({data}) => (
                 />
               </div>
             </div>
-            <div className="xl:w-1/4 h-72 xl:ml-2 xl:mr-2 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div className="xl:w-1/4 h-72 xl:ml-2 xl:mr-2 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
+              <p>
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 3 - Preuve de paiement
               </h5>
               <p className="font-baloobhai">Envoi de preuve de paiement par WhatSapp</p>
+              </p>
+              <div className="text-center">
+                <StaticImage
+                  src="../images/icons/cash-payment.svg"
+                  width={150}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Étudiante en médecine"
+                />
+              </div>
             </div>
-            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  dark:border-gray-700">
+            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 4 - Email d'accès
               </h5>
               <p className="font-baloobhai">Réception du lien par email pour choisir votre mot de passe et accéder à votre espace de travail personnel.</p>
+              <div className="text-center">
+                <StaticImage
+                  src="../images/icons/email.svg"
+                  width={120}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Étudiante en médecine"
+                />
+              </div>
             </div>
           </div>
  
@@ -307,25 +368,45 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Question 1 ?
+                        <strong>1 - Qui sommes-nous?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                    Réponse 1
+                    <p><Link to="/" className="text-blue-500">www.concours-medecine.ma</Link> est une solution développée par BOOKMANIA partenaire de réussite scolaire depuis 2007 à Casablanca.</p>
+                    <p>A BOOKMANIA, notre équipe de professeurs experts a préparé des centaines d’étudiants au concours de médecine depuis 15 ans.</p>
+                    <p>Nous avons décidé de mettre en ligne tous nos outils efficaces et performants pour aider les élèves qui veulent réussir ce concours dans tout le royaume.</p>
                   </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Question 2 ?
+                        <strong>2 - Que comprend l’abonnement?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                      Réponse 2
+                      <p>L’abonnement vous donne accès à une plateforme accessible sur ordinateur, tablette ou smartphone, qui comprend les annales corrigées des années précédentes du concours de médecine dans les quatres matières du concours (Maths, Physique, Chimie, SVT).</p>
+                      <p>La plateforme vous permet de gérer vos révisions de manière très efficace.</p>
+                      <p>En temps réel, vous pouvez avoir vos scores dans les différentes matières et sur les différents sujets d’annales et ainsi piloter vos révisions de manière très efficace.</p>
+                      <p>Vous avez aussi accès à des conseils personnalisés dans un espace dédié. Nous vous accompagnons pour être prêts le jour J.</p>
+                      <p>Vous pouvez aussi échanger avec des élèves aussi motivés que vous qui préparent le concours de médecine dans tout le royaume.</p>
+                  </AccordionItemPanel>
+              </AccordionItem>
+                            <AccordionItem>
+                  <AccordionItemHeading>
+                      <AccordionItemButton>
+                        <strong>3 - Quand puis-je avoir accès à la plateforme pour commencer à me préparer?</strong>
+                      </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                   <p>Dès réception de la preuve de votre paiement par WhatSapp. Il suffit d’aller déposer l’argent dans n’importe quelle agence WafaCash et nous envoyer une photo de la preuve de dépôt. Nous vous envoyons instantanément les accès à la plateforme.</p>
                   </AccordionItemPanel>
               </AccordionItem>
           </Accordion>
       </div>
+
+      {/* <div className="fixed left-5 bottom-20 xl:left-10 xl:right-10">
+      <button onClick={() => nightwind.toggle()}>Nightmode</button>
+      </div> */}
 
       <div className="fixed left-5 bottom-20 xl:left-10 xl:right-10">
         <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" >
