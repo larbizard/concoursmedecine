@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
           </AnchorLink>
 
           <a href="https://app.didactigo.com/" className="text-white hover:text-red-600 flex flex-row justify-start">
-            Se connecter
+          <h2 className="pl-2 text-xl font-montserrat">Se connecter</h2>
           </a>
       </Transition>
       </div>
