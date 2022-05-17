@@ -274,7 +274,7 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="infospratiques" className="xl:px-44 py-20 bg-slate-100">
-        <h3 className="mx-2 xl:mx-0">Informations pratiques</h3>
+        <h3 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Informations pratiques</h3>
         
         <Accordion>
               <AccordionItem>
@@ -368,7 +368,7 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="faq" className="xl:px-44 py-20">
-        <h3 className="mx-2 xl:mx-0">FAQ</h3>
+        <h3 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">FAQ</h3>
         <Accordion>
               <AccordionItem>
                   <AccordionItemHeading>
