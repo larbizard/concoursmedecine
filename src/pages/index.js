@@ -280,7 +280,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Comment s'inscrire au concours ?
+                        <strong>Comment s'inscrire au concours ?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -293,7 +293,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                      Comment faire mes candidatures sur la plateforme ?
+                      <strong>Comment faire mes candidatures sur la plateforme ?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -312,7 +312,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Cadre de référence du concours commun d’accès aux facultés de Médecine, de Pharmacie et de Médecine Dentaire.
+                        <strong>Cadre de référence du concours commun d’accès aux facultés de Médecine, de Pharmacie et de Médecine Dentaire.</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -331,7 +331,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        Quel est le nombre de places dans les facultés ?
+                        <strong>Quel est le nombre de places dans les facultés ?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -373,7 +373,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        1 - Qui sommes-nous?
+                        <strong>1 - Qui sommes-nous?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -385,7 +385,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        2 - Que comprend l’abonnement?
+                        <strong>2 - Que comprend l’abonnement?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -399,7 +399,7 @@ const IndexPage = ({data}) => (
                             <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        3 - Quand puis-je avoir accès à la plateforme pour commencer à me préparer?
+                        <strong>3 - Quand puis-je avoir accès à la plateforme pour commencer à me préparer?</strong>
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>

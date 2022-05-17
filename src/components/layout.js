@@ -88,9 +88,13 @@ const Layout = ({ children }) => {
             <h2 className="pl-2 text-xl font-montserrat">Abonnement</h2>
           </AnchorLink>
 
-        <AnchorLink to="/#infospratiques" title="Infos pratiques" className="text-white hover:text-red-600 flex flex-row justify-start">
-          <h2 className="pl-2 text-xl font-montserrat">Infos pratiques</h2>
-        </AnchorLink>
+          <AnchorLink to="/#infospratiques" title="Infos pratiques" className="text-white hover:text-red-600 flex flex-row justify-start">
+            <h2 className="pl-2 text-xl font-montserrat">Infos pratiques</h2>
+          </AnchorLink>
+
+          <a href="https://app.didactigo.com/" className="text-white hover:text-red-600 flex flex-row justify-start">
+            Se connecter
+          </a>
       </Transition>
       </div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />

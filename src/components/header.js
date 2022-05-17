@@ -57,6 +57,12 @@ const Header = ({ siteTitle }) => (
           Infos pratiques
         </AnchorLink>
       </h2>
+
+      <h2 className="hidden md:block px-4 text-sm text-red-500 hover:text-red-600 font-montserrat">
+        <a href="https://app.didactigo.com/">
+          Se connecter
+        </a>
+      </h2>
   </header>
   </>
 
