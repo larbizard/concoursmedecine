@@ -24,6 +24,11 @@ import {
 // Demo styles, see 'Styles' section below for some notes on use.
 import 'react-accessible-accordion/dist/fancy-example.css';
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-0H6F003V7H");
+ReactGA.send("pageview");
+
 const IndexPage = ({data}) => (
   <Layout>
     <Seo title="Concours Médecine Maroc" />
@@ -193,11 +198,11 @@ const IndexPage = ({data}) => (
         />
         <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai pt-10">Seulement 350 Dhs. Non, non… Vous ne rêvez pas, ça coûte moins cher qu’un cours particulier de 2 heures.</h6> 
       </div>
-      <div id="abonnement" className="xl:px-44 py-20 text-center">
+      <div id="abonnement" className="xl:px-20 2xl:px-44 py-20 text-center">
           <h5 className="mb-2 text-3xl font-bold tracking-tight text-red-500 font-montserrat">Comment puis- je m’abonner?</h5>
           <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-baloobhai">C’est très simple.</h6> 
-          <div className="xl:py-5 xl:flex xl:flex-row align-middle justify-center justify-content-center">
-            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
+          <div className="xl:py-5 xl:flex xl:flex-row xl:h-96 align-middle justify-center justify-content-center">
+            <div className="xl:w-1/4 h-full my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
               <p className="font-baloobhai">Envoyez vos nom, prénom et adresse email</p>
               <p className="font-baloobhai">
@@ -216,8 +221,8 @@ const IndexPage = ({data}) => (
                 />
               </a>
               </p>
-            </div>
-            <div className="xl:w-1/4 h-72 xl:ml-2  my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
+            </div>  
+            <div className="xl:w-1/4 h-full xl:ml-2  my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">2 - Dépôt Wafacash ou virement bancaire</h5>
               <p className="font-baloobhai">Nous vous enverrons les instructions pour payer votre abonnement par Wafacash, par dépôt d’espèces ou virement sur un compte bancaire</p>
               <div className="text-center">
@@ -230,7 +235,7 @@ const IndexPage = ({data}) => (
                 />
               </div>
             </div>
-            <div className="xl:w-1/4 h-72 xl:ml-2 xl:mr-2 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
+            <div className="xl:w-1/4 h-full xl:ml-2 xl:mr-2 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <p>
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 3 - Preuve de paiement
@@ -247,7 +252,7 @@ const IndexPage = ({data}) => (
                 />
               </div>
             </div>
-            <div className="xl:w-1/4 h-72 my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
+            <div className="xl:w-1/4 h-full my-4 xl:my-0 p-2 xl:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md flex flex-col justify-between">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 4 - Email d'accès
               </h5>
@@ -269,9 +274,9 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="infospratiques" className="xl:px-44 py-20 bg-slate-100">
-        <h3 className="mx-2 xl:mx-0 font-montserrat">Informations pratiques</h3>
+        <h3 className="mx-2 xl:mx-0">Informations pratiques</h3>
         
-        <Accordion className="font-baloobhai">
+        <Accordion>
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
@@ -363,12 +368,12 @@ const IndexPage = ({data}) => (
       </div>
 
       <div id="faq" className="xl:px-44 py-20">
-        <h3 className="mx-2 xl:mx-0 font-montserrat">FAQ</h3>
-        <Accordion className="font-baloobhai">
+        <h3 className="mx-2 xl:mx-0">FAQ</h3>
+        <Accordion>
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        <strong>1 - Qui sommes-nous?</strong>
+                        1 - Qui sommes-nous?
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -380,7 +385,7 @@ const IndexPage = ({data}) => (
               <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        <strong>2 - Que comprend l’abonnement?</strong>
+                        2 - Que comprend l’abonnement?
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -394,7 +399,7 @@ const IndexPage = ({data}) => (
                             <AccordionItem>
                   <AccordionItemHeading>
                       <AccordionItemButton>
-                        <strong>3 - Quand puis-je avoir accès à la plateforme pour commencer à me préparer?</strong>
+                        3 - Quand puis-je avoir accès à la plateforme pour commencer à me préparer?
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
