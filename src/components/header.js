@@ -59,7 +59,7 @@ const Header = ({ siteTitle }) => (
       </h2>
 
       <h2 className="hidden md:block px-4 text-sm text-red-500 hover:text-red-600 font-montserrat">
-        <a href="https://app.didactigo.com/">
+        <a href="https://app.manhaj.fr/auth/signin">
           Se connecter
         </a>
       </h2>

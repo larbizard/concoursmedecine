@@ -62,7 +62,7 @@ const IndexPage = ({data}) => (
             </ul>
           </div>
           <div className="xl:w-2/5">
-          <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className=" my-4 flex items-center">
+          <a href="https://wa.me/message/FZMSW6L2EUEFG1" target="_blank" rel="noreferrer" className=" my-4 flex items-center">
               <button className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold font-baloobhai">Nous contacter</button>
           </a>          
           </div>
@@ -206,12 +206,12 @@ const IndexPage = ({data}) => (
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">1 - Contactez nous par WhatsApp.</h5>
               <p className="font-baloobhai">Envoyez vos nom, prénom et adresse email</p>
               <p className="font-baloobhai">
-              <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold align-middle font-baloobhai">
+              <a href="https://wa.me/message/FZMSW6L2EUEFG1" target="_blank" rel="noreferrer" className="w-full text-white bg-red-600 rounded-3xl hover:bg-red-800 focus:outline-none focus:ring-red-300 p-2 px-3 font-semibold align-middle font-baloobhai">
               Contactez nous
               </a>
               </p>
               <p className="font-baloobhai">
-              <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/message/FZMSW6L2EUEFG1" target="_blank" rel="noreferrer">
                 <StaticImage
                   src="../images/icons/whatsapp.svg"
                   quality={95}
@@ -414,7 +414,7 @@ const IndexPage = ({data}) => (
       </div> */}
 
       <div className="fixed left-5 bottom-20 xl:left-10 xl:right-10">
-        <a href="https://wa.me/message/OBA4IEB2NYR4E1" target="_blank" rel="noreferrer" >
+        <a href="https://wa.me/message/FZMSW6L2EUEFG1" target="_blank" rel="noreferrer" >
           <button type="button" className="text-white bg-white hover:bg-green-100 border-green-500 border-2 focus:outline-none focus:ring-red-300 font-medium rounded-3xl text-sm p-2.5 text-center inline-flex items-center mr-2">
           <StaticImage
               src="../images/whatsapp.png"
