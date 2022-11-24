@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
             <h2 className="pl-2 text-xl font-montserrat">Infos pratiques</h2>
           </AnchorLink>
 
-          <a href="https://app.didactigo.com/" className="text-white hover:text-red-600 flex flex-row justify-start">
+          <a href="https://app.manhaj.fr/auth/signin" className="text-white hover:text-red-600 flex flex-row justify-start">
           <h2 className="pl-2 text-xl font-montserrat">Se connecter</h2>
           </a>
       </Transition>
